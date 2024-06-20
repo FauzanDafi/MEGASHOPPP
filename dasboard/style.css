@@ -215,4 +215,11 @@ article .box-item {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
   }
+
+  #box-alert {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
