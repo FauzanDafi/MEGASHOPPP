@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui;
+}
+
+:root {
+  --color-theree: #0c1844;
+  --color-secondary: #dedede;
+  --color-primary: #ffffff;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 360px;
+  height: 350px;
+  background-color: var(--color-secondary);
+  padding: 10px;
+  box-shadow: 10px 10px 0 var(--color-theree);
+  border: 2px solid black;
+}
+
+.box h1 {
+  text-align: center;
+}
+
+.box form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 30px 0;
+}
+
+label::after {
+  content: "*";
+  color: red;
+}
+
+form #email {
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+}
+
+form #password {
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+}
+
+form button {
+  margin-top: 10px;
+  cursor: pointer;
+  width: 70px;
+  height: 30px;
+  background-color: var(--color-primary);
+  border: none;
+  color: var(--color-theree);
+  transition: all 0.4s ease;
+}
+
+form button:hover {
+  box-shadow: 5px 5px 0 var(--color-theree);
+}
